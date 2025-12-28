@@ -22,7 +22,7 @@ def stream_chat_completion():
 
     # Create a streaming chat completion
     stream = client.chat.completions.create(
-        model="openai/gpt-4.1",  # This gets mapped by the proxy
+        model="openai/o4-mini-high",  # This gets mapped by the proxy
         messages=[
             {"role": "system", "content": "You are a helpful AI assistant."},
             {
@@ -60,7 +60,7 @@ def non_streaming_chat_completion():
 
     # Create a non-streaming chat completion
     response = client.chat.completions.create(
-        model="openai/gpt-4.1",  # This gets mapped by the proxy
+        model="openai/o4-mini-high",  # This gets mapped by the proxy
         messages=[
             {"role": "system", "content": "You are a helpful AI assistant."},
             {"role": "user", "content": "Write a short poem about coding."},
