@@ -117,6 +117,25 @@ var ModelMap = map[string]ReplicateModel{
 			},
 		},
 	},
+	"anthropic/claude-4.5-sonnet": {
+		ReplicateID: "anthropic/claude-4.5-sonnet",
+		ModelData: ModelData{
+			Name:        "Claude 4.5 Sonnet",
+			Description: "Claude 4.5 Sonnet is Anthropic's most intelligent model to date, with significant gains on coding and complex task performance",
+			Pricing: ModelPricing{
+				Prompt:     "0.000003",
+				Completion: "0.000015",
+				Image:      "0.0048",
+				Request:    "0",
+			},
+			ContextLength: 200000,
+			Architecture: ModelArchitecture{
+				Modality:     "text+image->text",
+				Tokenizer:    "Claude",
+				InstructType: nil,
+			},
+		},
+	},
 	"anthropic/claude-3.7-sonnet": {
 		ReplicateID: "anthropic/claude-3.7-sonnet",
 		ModelData: ModelData{
