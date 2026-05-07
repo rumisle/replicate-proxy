@@ -98,6 +98,25 @@ var ModelMap = map[string]ReplicateModel{
 			},
 		},
 	},
+	"anthropic/claude-4.6-opus": {
+		ReplicateID: "anthropic/claude-opus-4.6",
+		ModelData: ModelData{
+			Name:        "Claude 4.6 Opus",
+			Description: "Claude 4.6 Opus is Anthropic's most powerful model, delivering state-of-the-art performance on complex reasoning, coding, and creative tasks",
+			Pricing: ModelPricing{
+				Prompt:     "0.000005",
+				Completion: "0.000025",
+				Image:      "0.008",
+				Request:    "0",
+			},
+			ContextLength: 1000000,
+			Architecture: ModelArchitecture{
+				Modality:     "text+image->text",
+				Tokenizer:    "Claude",
+				InstructType: nil,
+			},
+		},
+	},
 	"anthropic/claude-sonnet-4": {
 		ReplicateID: "anthropic/claude-4-sonnet",
 		ModelData: ModelData{
